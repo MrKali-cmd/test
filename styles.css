@@ -1,0 +1,106 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+:root {
+  --primary-color: #28d; /* Define primary color for easy customization */
+  --secondary-color: #ebebeb; /* Define secondary color for easy customization */
+  --accent-color: #17c; /* Define accent color for hover effects */
+}
+
+body {
+  background: #456; /* Dark grey background */
+  font-family: 'Open Sans', sans-serif;
+  display: flex; /* Center the login form */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure login form is centered even on smaller screens */
+  margin: 0; /* Remove default body margins */
+}
+
+.login {
+  width: 400px;
+  max-width: 100%; /* Prevent overflow on smaller screens */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visual appeal */
+  border-radius: 5px; /* Add rounded corners */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.login-triangle {
+  width: 0;
+  height: 0; /* Explicitly set height */
+  margin: 0 auto 20px; /* Center and add margin */
+  border: 12px solid transparent;
+  border-bottom-color: var(--primary-color); /* Use defined variable */
+}
+
+.login-header {
+  background: var(--primary-color); /* Use defined variable */
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: bold; /* Stronger header */
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: var(--secondary-color); /* Use defined variable */
+  padding: 20px; /* Increased padding */
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid #bbb;
+  padding: 16px;
+  margin-bottom: 15px; /* Added margin for spacing */
+  font-family: inherit;
+  font-size: 1em; /* More consistent font size */
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  color: #333; /* Darker text for better contrast */
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: var(--primary-color); /* Use primary color for focus */
+  outline: none; /* Remove default outline */
+}
+
+
+.login input[type="submit"] {
+  background: var(--primary-color); /* Use defined variable */
+  border: none; /* More concise */
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold; /* Make button text stand out */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.login input[type="submit"]:hover {
+  background: var(--accent-color); /* Use accent color for hover */
+}
+
+.login input[type="submit"]:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a focus shadow */
+}
+
+.login label { /* Added label styling for better accessibility and form structure */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+footer {
+  background-color: #333; /* رنگ پس زمینه */
+  color: white; /* رنگ متن */
+  text-align: center; /* متن در وسط قرار می گیرد */
+  padding: 10px; /* فاصله داخلی */
+  position: fixed; /* فوتر به پایین صفحه چسبیده می شود */
+  bottom: 0; /* موقعیت عمودی */
+  width: 100%; /* عرض کل صفحه */
+  box-sizing: border-box; /* برای حل مشکل padding */}
